@@ -1,0 +1,1 @@
+export { default } from 'ember-simple-draggable/components/draggable-wrapper/component';

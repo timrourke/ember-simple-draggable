@@ -1,0 +1,40 @@
+<h1>ember-simple-draggable</h1>
+
+<style>
+	.draggable-wrapper {
+		border: 1px solid red;
+		position: relative;
+		width: 200px;
+	}
+
+	.draggable-wrapper.draggable-wrapper--is-dragging {
+		border: 1px solid green;
+	}
+
+	.draggable-wrapper:before {
+		background: rgba(100, 0, 0, 0.25);
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1:
+	}
+
+	.draggable-wrapper.draggable-wrapper--is-dragging:before {
+		background: rgba(0, 100, 0, 0.25);
+	}
+</style>
+
+{{#draggable-wrapper isDragging=isDragging}}
+	<p>Hello there!</p>
+
+	{{#if isDragging}}
+		<p>I am dragging!</p>
+	{{else}}
+		<p>I am not dragging. :(</p>
+	{{/if}}
+{{/draggable-wrapper}}
