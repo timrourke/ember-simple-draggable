@@ -1,8 +1,8 @@
-# Ember-simple-draggable
+# ember-simple-draggable
 
-This README outlines the details of collaborating on this Ember addon.
+`ember-simple-draggable` is an addon for making simple draggable components with as few extra dependencies an opinons as possible.
 
-## Installation
+#- Installation
 
 * `git clone <repository-url>` this repository
 * `cd ember-simple-draggable`
